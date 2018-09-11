@@ -141,7 +141,7 @@ export class IconElement extends HyperElement {
 ```
 
 ## Usage
-Start the [application here]():
+Start the [web application here](https://jovdb.github.io/quiz-mv/):
 
 Normally the Quiz is played with multiple users. Each player should login with its own name and the quizmaster should login with 'quizmaster'.
 The quizmaster will have navigation controls.
