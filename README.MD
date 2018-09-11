@@ -143,9 +143,9 @@ export class IconElement extends HyperElement {
 ## Usage
 Start the [web application here](https://jovdb.github.io/quiz-mv/):
 
-Normally the Quiz is played with multiple users. Each player should login with its own name and the quizmaster should login with 'quizmaster'.
+Normally the Quiz is played with multiple users. Each player should login with its own name and the quizmaster should login with '**quizmaster**'.
 The quizmaster will have navigation controls.
 
-For testing purposes I create a 'demo' user. When you login with 'demo' it will simulate multiple users but the navigation is now done automatically.
+For testing purposes I create a '**demo**' user. When you login with 'demo' it will simulate multiple users but the navigation is now done automatically.
 
-Also watch the DevTools - Console. I created colorfull logging that should help to know what is updated and causing rerenders.
+Also watch the DevTools - Console. I created colorful logging that should help to know what is updated and causing rerenders.
