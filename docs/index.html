@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>M vs V</title>
+	<link href="https://fonts.googleapis.com/css?family=Play|Condiment" rel="stylesheet">
+
+	<!-- Above the Fold styling -->
+	<style>
+		.block-input__dot {
+			width: 16px;
+			height: 16px;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 50%;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			animation-name: loader;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			animation-duration: 1s;
+		}
+
+		.block-input__dot:nth-child(1) {
+			margin-left: -40px;
+			animation-delay: -0.1s;
+		}
+
+		.block-input__dot:nth-child(2) {
+			margin-left: -8px;
+		}
+
+		.block-input__dot:nth-child(3) {
+			margin-left: 24px;
+			animation-delay: 0.1s;
+		}
+
+		@keyframes loader {
+			0% {
+				transform: translateY(0) scale(1);
+			}
+			
+			70% {
+				transform: translateY(0px) scale(1);
+			}
+
+			75% {
+				transform: translateY(-8px) scale(1, 1.2);
+			}
+
+			80% {
+				transform: translateY(-16px) scale(1);
+			}
+
+			85% {
+				transform: translateY(-8px) scale(1, 1.2);
+			}
+
+			89% {
+				transform: translateY(0) scale(1, 1);
+			}
+
+			92% {
+				transform: translateY(1px) scale(1.2, 1);
+			}
+
+			100% {
+				transform: translateY(0) scale(1);
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="app">
+		<div class="block-input__dot"></div>
+		<div class="block-input__dot"></div>
+		<div class="block-input__dot"></div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.6.2/document-register-element.js"></script>
+	<script src="https://unpkg.com/hyperhtml@latest/min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+	<script src="questions.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
